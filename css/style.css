@@ -10,6 +10,12 @@
  * ==|== normalize ==========================================================
  */
 
+/*
+ * This heavily customised implementation of HTML5 Boilerplate is NOT a TEMPLATE
+ * If you want to use this layout and codebase please don't.
+ * You can get in touch (mikebaxter at ycollective dot com dot au) if you like.
+ */
+
 
 /* =============================================================================
    HTML5 display definitions
@@ -34,7 +40,7 @@ html { font-size: 100%; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 10
 
 html, button, input, select, textarea { font-family: sans-serif; color: #222; }
 
-body { margin: 0; font-size: 1em; line-height: 1.4; }
+body { margin: 0; line-height: 1.4; }
 
 /*
  * Remove text-shadow in selection highlight: h5bp.com/i
@@ -50,9 +56,9 @@ body { margin: 0; font-size: 1em; line-height: 1.4; }
    Links
    ========================================================================== */
 
-a { color: #00e; }
+a { color: #bbb; font-weight:bolder; text-decoration:none;}
 a:visited { color: #551a8b; }
-a:hover { color: #06e; }
+a:hover { color: #06e; text-decoration:underline; }
 a:focus { outline: thin dotted; }
 
 /* Improve readability when focused and hovered in all browsers: h5bp.com/h */
@@ -92,6 +98,10 @@ small { font-size: 85%; }
 sub, sup { font-size: 75%; line-height: 0; position: relative; vertical-align: baseline; }
 sup { top: -0.5em; }
 sub { bottom: -0.25em; }
+
+.playball {font-family: 'Playball', cursive;}
+.opensans {font-family: 'Open Sans Condensed', sans-serif;}
+
 
 
 /* =============================================================================
@@ -215,17 +225,24 @@ td { vertical-align: top; }
 
 
 /* ==|== primary styles =====================================================
-   Author:
+   Author: Mike FitzBaxter - Copyright Mike Fitzbaxter 2012
    ========================================================================== */
-
-
-
-
-
-
-
-
-
+html, body {height:100%;}
+body {background:url(../img/bg-site-tile.png) 0 0 repeat; color:#fff; font-size:62.5%; position:relative;}
+header, footer, section, aside {position:relative;}
+header {height:100%; width:100%; margin:0 auto;}
+	header .canvas {position:absolute; top:50%; left:50%; width:40%; height:20%; margin:-10% 0 0 -20%;}
+	header h1 {text-align:center; font-size:5.5em; margin:.3em 0 0; text-shadow:0 -1px 10px rgba(0, 0, 0, .9);}
+	header h2 {text-align:center; font-size:1.8em; margin:.3em 0 0; text-shadow:0 -1px 5px rgba(0, 0, 0, .9);}
+	header .link {text-align:center; display:block; position:absolute; width:100%; font-size:1.6em;}
+	header .link:visited {color:#bbb;}
+	header .link:hover, header .link:active {text-decoration:none; color:#fff;}
+	header .scroll {bottom:-60%;}
+	header .about {top:-60%;}
+	
+#about {height:100%;}	
+	
+	#main aside {position:fixed; height:80%; width:20%; min-width:200px; right:-15px; top:10%; background:rgba(255, 255, 255, .3); border-radius:15px; border:1px solid rgba(255, 255, 255, 0.4); box-shadow:0 0 9px #222; box-sizing:border-box; padding:20px; display:none;}
 
 
 
