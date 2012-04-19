@@ -11,6 +11,7 @@
 	<meta name="viewport" content="width=device-width">
 
 	<link href='http://fonts.googleapis.com/css?family=Playball|Open+Sans+Condensed:700,300,300italic' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="js/vendor/fancybox/jquery.fancybox.css">
 	<link rel="stylesheet" href="css/style.css">
 	<script src="js/vendor/modernizr-2.5.3.min.js"></script>
 </head>
@@ -19,38 +20,223 @@
 	<!--[if lt IE 8]>
 		<p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p>
 	<![endif]-->
-		<header class="scrollable cf">
-			<a name="#header"></a>
+		<!-- *** HEADER *** -->
+		<header class="cf" id="header">
 			<div class="canvas">
 				<hgroup>
 					<h1 class="playball">Mike Baxter</h1>
 					<h2 class="opensans">User interface, design & code.</h2>
 				</hgroup>
-				<a href="#" class="link scroll opensans">work<br/>&#9660;</a>
-				<a href="#" class="link about opensans">&#9650;<br/>about</a>
+				<a href="#timeline" class="link scroll opensans">work<br/>&#9660;</a>
+				<a href="#about" class="link about opensans">&#9650;<br/>about</a>
 			</div>
-		</header>
-		<section id="about" class="scrollable cf">
-			<img src="" alt="avatar image" />
-			<h1>About Mike</h1>
-			<p class="intr0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam turpis tellus, convallis sed imperdiet quis, pellentesque ac tortor. Pellentesque aliquet sagittis viverra. Nulla posuere, velit sed feugiat auctor, eros purus convallis enim, euismod pharetra arcu metus sit amet metus. Aenean consequat euismod fringilla.</p>
-			<p>Duis ac pulvinar ligula. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Praesent feugiat, arcu nec lobortis iaculis, velit neque fermentum arcu, vitae elementum turpis libero nec augue. Morbi rhoncus mollis diam, sit amet feugiat massa posuere at. Nam porta quam lobortis urna consectetur vitae bibendum velit tempus.</p>
-			<p>Cras sapien justo, luctus et ultricies aliquam, pharetra in massa. Vestibulum quis lacus nec elit molestie pretium non in neque. Vivamus pulvinar, odio consequat consequat facilisis, turpis mi eleifend augue, quis feugiat lorem dui vitae ante. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Mauris adipiscing feugiat nulla, ut suscipit augue tincidunt eu. Ut quis enim ligula.</p>
+		</header><!-- /header -->
+		
+		<!-- *** ABOUT *** -->
+		<section id="about" class="cf panel">
+			<img src="img/profile.jpg" alt="avatar image" width="180" />
+			<h1 class="opensans">about</h1>
+			<p class="intro">With over 10 years experience designing and building engaging experiences for a huge variety of audiences gives me a wealth of knowledge in creating and designing communication that is usable and works.</p>
+			<h2 class="playball">Skills</h2>
+			<ul>
+				<li>HTML5</li>
+				<li>CSS3</li>
+				<li>Javascript</li>
+				<li>UI / UX</li>
+				<li>Design (print & digital)</li>
+				<li>Creative Direction</li>
+				<li>Team leadership</li>
+			</ul>
+			<a href="#header" class="link back opensans">back<br/>&#9660;</a>
 		</section><!-- /#about -->
-		<section id="timeline" class="scrollable cf">
-			This is the timeline
+		
+		<!-- *** TIMELINE *** -->
+		<section id="timeline" class="cf">
+			<a href="#header" class="link scroll opensans">&#9650;<br/>back</a>
+			<h1 class="opensans directions">scroll</h1>
+<!-- article -->
+			<article class="scrollable">
+				<div class="faceplate">
+					<a href="img/lightbox/alchemy-01.jpg" class="fancybox" rel="alchemy"><img src="img/faceplates/alchemy.jpg" alt="Diageo Alchemy" /></a>
+					<div class="headings scrollable cf">
+						<h1 class="heading">Diageo Alchemy Booking Tool</h1>
+						<h2 class="subhead">Interface design, digital design, front-end coding</h2>
+					</div><!-- /.headings -->
+				</div>
+				<div class="details">
+					<a href="img/lightbox/alchemy-02.jpg" class="fancybox" rel="alchemy"><img src="img/faceplates/alchemy.jpg" alt="Diageo Alchemy" /></a>
+				</div>
+			</article>
+<!-- /article -->
+<!-- article -->
+			<article class="scrollable">
+				<div class="faceplate">
+					<a href="img/lightbox/arthurs-01.jpg" class="fancybox" rel="arthurs"><img src="img/faceplates/arthursday.jpg" alt="" /></a>
+					<div class="headings scrollable cf">
+						<h1 class="heading">Guinness Arthur's Day</h1>
+						<h2 class="subhead">Interface design, digital design, front-end coding</h2>
+					</div><!-- /.headings -->
+				</div>
+				<div class="details">
+					<a href="img/lightbox/arthurs-02.jpg" class="fancybox" rel="arthurs"><img src="img/faceplates/arthurs.jpg" alt="" /></a>
+					<a href="img/lightbox/arthurs-03.jpg" class="fancybox" rel="arthurs"><img src="img/faceplates/arthurs.jpg" alt="" /></a>
+					<a href="img/lightbox/arthurs-04.jpg" class="fancybox" rel="arthurs"><img src="img/faceplates/arthurs.jpg" alt="" /></a>
+					<a href="img/lightbox/arthurs-05.jpg" class="fancybox" rel="arthurs"><img src="img/faceplates/arthurs.jpg" alt="" /></a>
+				</div>
+			</article>
+<!-- /article -->
+<!-- article -->
+			<article class="scrollable">
+				<div class="faceplate">
+					<a href="img/lightbox/blacklist-01.jpg" class="fancybox" rel="blacklist"><img src="img/faceplates/blacklist.jpg" alt="" /></a>
+					<div class="headings scrollable cf">
+						<h1 class="heading">Guinness Blacklist</h1>
+						<h2 class="subhead">Interface design, digital design, print design, front-end coding, javascript, mobile iOS</h2>
+					</div><!-- /.headings -->
+				</div>
+				<div class="details">
+					<a href="img/lightbox/blacklist-02.jpg" class="fancybox" rel="blacklist"><img src="img/faceplates/blacklist.jpg" alt="" /></a>
+					<a href="img/lightbox/blacklist-03.jpg" class="fancybox" rel="blacklist"><img src="img/faceplates/blacklist.jpg" alt="" /></a>
+					<a href="img/lightbox/blacklist-04.jpg" class="fancybox" rel="blacklist"><img src="img/faceplates/blacklist.jpg" alt="" /></a>
+					<a href="img/lightbox/blacklist-05.jpg" class="fancybox" rel="blacklist"><img src="img/faceplates/blacklist.jpg" alt="" /></a>
+					<a href="img/lightbox/blacklist-06.jpg" class="fancybox" rel="blacklist"><img src="img/faceplates/blacklist.jpg" alt="" /></a>
+				</div>
+			</article>
+<!-- /article -->
+<!-- article -->
+			<article class="scrollable">
+				<div class="faceplate">
+					<a href="img/lightbox/careflight.png" class="fancybox" rel="careflight"><img src="img/faceplates/careflight.jpg" alt="" /></a>
+					<div class="headings scrollable cf">
+						<h1 class="heading">Careflight</h1>
+						<h2 class="subhead">Interface design, wireframing, digital design</h2>
+					</div><!-- /.headings -->
+				</div>
+				<div class="details">
+					<a href="img/lightbox/careflight-02.jpg" class="fancybox" rel="careflight"><img src="img/faceplates/alchemy.jpg" alt="" /></a>
+				</div>
+			</article>
+<!-- /article -->
+<!-- article -->
+			<article class="scrollable">
+				<div class="faceplate">
+					<a href="img/lightbox/cudo-01.jpg" class="fancybox" rel="Cudo"><img src="img/faceplates/cudokit.jpg" alt="CudoKit" /></a>
+					<div class="headings scrollable cf">
+						<h1 class="heading">CudoKit</h1>
+						<h2 class="subhead">Interface design, digital design, front-end coding</h2>
+					</div><!-- /.headings -->
+				</div>
+				<div class="details">
+					<a href="img/lightbox/cudo-02.jpg" class="fancybox" rel="Cudo"><img src="img/faceplates/cudokit.jpg" alt="CudoKit" /></a>
+				</div>
+			</article>
+<!-- /article -->
+<!-- article -->
+			<article class="scrollable">
+				<div class="faceplate">
+					<a href="img/lightbox/eci-01.jpg" class="fancybox" rel="eci"><img src="img/faceplates/ECI.jpg" alt="eci" /></a>
+					<div class="headings scrollable cf">
+						<h1 class="heading">Emergency Care Institute - NSW Health</h1>
+						<h2 class="subhead">Interface design, wireframing, digital design, front-end coding</h2>
+					</div><!-- /.headings -->
+				</div>
+				<div class="details">
+					<a href="img/lightbox/eci-02.jpg" class="fancybox" rel="eci"><img src="img/faceplates/ECI.jpg" alt="" /></a>
+				</div>
+			</article>
+<!-- /article -->
+<!-- article -->
+			<article class="scrollable">
+				<div class="faceplate">
+					<a href="img/lightbox/idlike.jpg" class="fancybox" rel="idlike"><img src="img/faceplates/idliketo.jpg" alt="idliketo" /></a>
+					<div class="headings scrollable cf">
+						<h1 class="heading">idlike.to - social micro blogging</h1>
+						<h2 class="subhead">Interface design, digital design, front-end coding, social media integration</h2>
+					</div><!-- /.headings -->
+				</div>
+				<div class="details">
+				</div>
+			</article>
+<!-- /article -->
+<!-- article -->
+			<article class="scrollable">
+				<div class="faceplate">
+					<a href="img/lightbox/plot-01.jpg" class="fancybox" rel="plot"><img src="img/faceplates/plot.jpg" alt="plot" /></a>
+					<div class="headings scrollable cf">
+						<h1 class="heading">Commonwealth Bank - Plot The Shot</h1>
+						<h2 class="subhead">Interface design, digital design, front-end coding, javascript, HTML5 + canvas, mobile</h2>
+					</div><!-- /.headings -->
+				</div>
+				<div class="details">
+					<a href="img/lightbox/plot-02.jpg" class="fancybox" rel="plot"><img src="img/faceplates/plot.jpg" alt="plot" /></a>
+					<a href="img/lightbox/plot-03.jpg" class="fancybox" rel="plot"><img src="img/faceplates/plot.jpg" alt="plot" /></a>
+					<a href="img/lightbox/plot-04.jpg" class="fancybox" rel="plot"><img src="img/faceplates/plot.jpg" alt="plot" /></a>
+					<a href="img/lightbox/plot-05.jpg" class="fancybox" rel="plot"><img src="img/faceplates/plot.jpg" alt="plot" /></a>
+				</div>
+			</article>
+<!-- /article -->
+<!-- article -->
+			<article class="scrollable">
+				<div class="faceplate">
+					<a href="img/lightbox/traffik-01.jpg" class="fancybox" rel="traffik"><img src="img/faceplates/traffik.jpg" alt="traffik" /></a>
+					<div class="headings scrollable cf">
+						<h1 class="heading">Traffik Ultranet</h1>
+						<h2 class="subhead">Interface design, wireframing, digital design, front-end coding</h2>
+					</div><!-- /.headings -->
+				</div>
+				<div class="details">
+					<a href="img/lightbox/traffik-02.jpg" class="fancybox" rel="traffik"><img src="img/faceplates/traffik.jpg" alt="traffik" /></a>
+				</div>
+			</article>
+<!-- /article -->
+<!-- article -->
+			<article class="scrollable">
+				<div class="faceplate">
+					<a href="img/lightbox/wspa-01.jpg" class="fancybox" rel="wspa"><img src="img/faceplates/wspa.jpg" alt="wspa" /></a>
+					<div class="headings scrollable cf">
+						<h1 class="heading">World Society for the Protection of Animals</h1>
+						<h2 class="subhead">Interface design, digital design, front-end coding, social media strategy, social media advertising</h2>
+					</div><!-- /.headings -->
+				</div>
+				<div class="details">
+					<a href="img/lightbox/wspa-02.jpg" class="fancybox" rel="wspa"><img src="img/faceplates/wspa.jpg" alt="wspa" /></a>
+					<a href="img/lightbox/wspa-03.jpg" class="fancybox" rel="wspa"><img src="img/faceplates/wspa.jpg" alt="wspa" /></a>
+				</div>
+			</article>
+<!-- /article -->
+<!-- article -->
+			<article class="scrollable">
+				<div class="faceplate">
+					<a href="img/lightbox/around-01.jpg" class="fancybox" rel="around"><img src="img/faceplates/around.jpg" alt="around" /></a>
+					<div class="headings scrollable cf">
+						<h1 class="heading">AroundYou</h1>
+						<h2 class="subhead">Interface design, wireframing, digital design, front-end coding, mobile, responsive design</h2>
+					</div><!-- /.headings -->
+				</div>
+				<div class="details">
+					<a href="img/lightbox/around-02.jpg" class="fancybox" rel="around"><img src="img/faceplates/wspa.jpg" alt="wspa" /></a>
+					<a href="img/lightbox/around-03.jpg" class="fancybox" rel="around"><img src="img/faceplates/wspa.jpg" alt="wspa" /></a>
+					<a href="img/lightbox/around-04.jpg" class="fancybox" rel="around"><img src="img/faceplates/wspa.jpg" alt="wspa" /></a>
+				</div>
+			</article>
+<!-- /article -->
 		</section><!-- /#timeline -->
+		
+		<!-- *** FOOTER *** --> 
 		<footer class="cf">
 			<nav>
 				Timeline nav goes here
 			</nav>
-			<p id="copyright">&copy; 2012 - Mike FitzBaxter</p>
-		</footer>
+			<p id="copyright">&copy; 2012 - Mike Baxter</p>
+		</footer><!-- /footer -->
 	</div><!-- /#site-canvas -->
 	<!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if offline -->
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
 	<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.7.2.min.js"><\/script>')</script>
-	
+	<script src="js/vendor/jquery.easing.1.3.js"></script>
+	<script src="js/vendor/scrollorama/js/jquery.scrollorama.js"></script>
+	<script src="js/vendor/fancybox/jquery.fancybox.pack.js"></script>
+
 	<!-- scripts concatenated and minified via build script -->
 	<script src="js/plugins.js"></script>
 	<script src="js/main.js"></script>
